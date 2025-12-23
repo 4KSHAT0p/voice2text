@@ -125,19 +125,3 @@ The built application will be in `src-tauri/target/release/`.
 1. **Browser Audio API**: Audio capture uses Web APIs, which work well but have browser-specific behaviors
 2. **API Key Storage**: Currently stored in memory only (resets on app restart). For production, consider secure storage.
 3. **Single Language**: Currently configured for English. Can be extended to support other languages.
-
-## Future Improvements
-
-- [ ] Persist API key securely
-- [ ] Add language selection
-- [ ] Implement keyboard shortcuts for recording
-- [ ] Add audio waveform visualization
-- [ ] Export transcription history
-
-## License
-
-MIT
-
----
-
-Built with ❤️ using Tauri, React, and Deepgram
