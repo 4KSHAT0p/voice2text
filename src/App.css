@@ -1,0 +1,146 @@
+/* Wispr Clone - Main App Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 24px 20px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.api-section {
+  width: 100%;
+}
+
+.status-section {
+  width: 100%;
+}
+
+.record-section {
+  padding: 20px 0;
+}
+
+.transcript-section {
+  flex: 1;
+  width: 100%;
+}
+
+.initialize-button {
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.initialize-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.initialize-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.initialize-button:disabled {
+  background: linear-gradient(145deg, #9ca3af, #6b7280);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.init-hint {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Responsive adjustments */
+@media (max-height: 600px) {
+  .app-header {
+    padding: 16px 20px 12px;
+  }
+
+  .app-header h1 {
+    font-size: 24px;
+  }
+
+  .app-main {
+    padding: 12px 20px;
+    gap: 12px;
+  }
+
+  .record-section {
+    padding: 12px 0;
+  }
+}
